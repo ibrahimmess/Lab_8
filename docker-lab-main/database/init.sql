@@ -8,6 +8,6 @@ CREATE TABLE items (
 );
 
 INSERT INTO items (name, description) VALUES
-  ('Docker', 'Container platform'),
-  ('Nginx', 'Web server'),
-  ('Express', 'Node.js framework');
+  ('AWS', 'Cloud platform'),
+  ('Docker Swarm', 'Container orchestration'),
+  ('MySQL', 'Relational database');
