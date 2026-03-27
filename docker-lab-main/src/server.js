@@ -4,7 +4,13 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.json());
-
+app.get("/api/info", (req, res) => {
+  res.json({
+    student: "Ibrahim Missaykeh",
+    project: "Docker Lab",
+    version: "1.0"
+  });
+});
 const pool = mysql.createPool({
   host: process.env.DB_HOST || 'localhost',
   user: process.env.DB_USER || 'root',
